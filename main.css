@@ -5,11 +5,8 @@
 }
 body {
     background: #8A2387;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -20,6 +17,7 @@ body {
     justify-content: center;
     height: 100vh;
     gap: 10px;
+    overflow: hidden;
   }
   
   div.main>h1 {
@@ -29,7 +27,8 @@ body {
     color: whitesmoke;
     text-shadow: 3px 5px #444444;
   }
-  /* part1 
+  /* part1 */
+  /* 
   .wrapper {
     display: flex;
     transform: scale(1.5);
@@ -63,7 +62,7 @@ body {
   }
   */
 
-  /* Style for label and input */
+  /* part2 */
 label {
  
   font-size: 18px;
@@ -80,12 +79,12 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
-/* Style for countdown container */
 #countdown {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  padding: 10px;
   transform: scale(1.2);
   margin-top: 20px;
   -webkit-transform: scale(1.2);
@@ -98,14 +97,19 @@ input[type="text"] {
   background-color: #222;
   color: #fff;
   border-radius: 5px;
-  margin: 0 5px;
+  margin: 0 10px;
 }
+ p {
+  padding: 10px;
+  text-align: center;
+}
+
 
 /* responsive part */
 
 @media (max-width:520px) {
-    h1{
-        font-size: 30px;
+    div.main>h1{
+        font-size: 28px;
     }
     h3{
         font-size: 15px;
@@ -121,11 +125,11 @@ input[type="text"] {
         -o-transform: scale(1);
 }
 #countdown{
-  transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
 }
 }
 @media (min-width:520px) and (max-width:700px) {
